@@ -1,10 +1,10 @@
-# 🔋 BatteryHub
+# BatteryHub
 
 **BatteryHub** is a Swift-based application designed to monitor your Apple devices' battery status in real-time. This project features a clean main application, a handy Home Screen **Widget**, and a companion **Watch App** for Apple Watch.
 
 ---
 
-## ✨ Features
+## Features
 
 *   **Main iOS App:** A clean and intuitive user interface to monitor detailed battery health and status.
 *   **Home Screen Widget:** Glance at your battery percentage instantly without opening the app.
@@ -12,7 +12,7 @@
 
 ---
 
-## 🛠️ Project Structure
+## Project Structure
 
 The repository is modularized into specific targets for each platform component:
 *   `BatteryHub`: The main iOS application.
@@ -21,7 +21,7 @@ The repository is modularized into specific targets for each platform component:
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 *   A Mac running the latest version of **macOS**.
