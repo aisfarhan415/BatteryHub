@@ -6,14 +6,91 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		25506D1F2FCD7DD80091EF93 /* BatteryHubWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 25506D1E2FCD7DD80091EF93 /* BatteryHubWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		25B893702FCD8FB7002BCF21 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25B8936F2FCD8FB7002BCF21 /* WidgetKit.framework */; };
+		25B893722FCD8FB7002BCF21 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25B893712FCD8FB7002BCF21 /* SwiftUI.framework */; };
+		25B8937F2FCD8FB9002BCF21 /* Widget.BatteryHubExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 25B8936D2FCD8FB7002BCF21 /* Widget.BatteryHubExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		25506D202FCD7DD80091EF93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 253BC22A2FCC9F14002A69C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25506D1D2FCD7DD80091EF93;
+			remoteInfo = "BatteryHubWatch Watch App";
+		};
+		25B8937D2FCD8FB9002BCF21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 253BC22A2FCC9F14002A69C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25B8936C2FCD8FB7002BCF21;
+			remoteInfo = Widget.BatteryHubExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		25506D2C2FCD7DDA0091EF93 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				25506D1F2FCD7DD80091EF93 /* BatteryHubWatch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25B893802FCD8FB9002BCF21 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				25B8937F2FCD8FB9002BCF21 /* Widget.BatteryHubExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		253BC2322FCC9F14002A69C3 /* BatteryHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BatteryHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		25506D192FCD7DD80091EF93 /* BatteryHubWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BatteryHubWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		25506D1E2FCD7DD80091EF93 /* BatteryHubWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BatteryHubWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		25B8936D2FCD8FB7002BCF21 /* Widget.BatteryHubExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Widget.BatteryHubExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		25B8936F2FCD8FB7002BCF21 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = /System/Library/Frameworks/WidgetKit.framework; sourceTree = "<absolute>"; };
+		25B893712FCD8FB7002BCF21 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = /System/Library/Frameworks/SwiftUI.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		25B893832FCD8FB9002BCF21 /* Exceptions for "Widget.BatteryHub" folder in "Widget.BatteryHubExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 25B8936C2FCD8FB7002BCF21 /* Widget.BatteryHubExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		253BC2342FCC9F14002A69C3 /* BatteryHub */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = BatteryHub;
+			sourceTree = "<group>";
+		};
+		25506D222FCD7DD80091EF93 /* BatteryHubWatch Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "BatteryHubWatch Watch App";
+			sourceTree = "<group>";
+		};
+		25B893732FCD8FB7002BCF21 /* Widget.BatteryHub */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				25B893832FCD8FB9002BCF21 /* Exceptions for "Widget.BatteryHub" folder in "Widget.BatteryHubExtension" target */,
+			);
+			path = Widget.BatteryHub;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -26,6 +103,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		25506D1B2FCD7DD80091EF93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25B8936A2FCD8FB7002BCF21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25B893722FCD8FB7002BCF21 /* SwiftUI.framework in Frameworks */,
+				25B893702FCD8FB7002BCF21 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -33,6 +126,9 @@
 			isa = PBXGroup;
 			children = (
 				253BC2342FCC9F14002A69C3 /* BatteryHub */,
+				25506D222FCD7DD80091EF93 /* BatteryHubWatch Watch App */,
+				25B893732FCD8FB7002BCF21 /* Widget.BatteryHub */,
+				25B8936E2FCD8FB7002BCF21 /* Frameworks */,
 				253BC2332FCC9F14002A69C3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,8 +137,20 @@
 			isa = PBXGroup;
 			children = (
 				253BC2322FCC9F14002A69C3 /* BatteryHub.app */,
+				25506D192FCD7DD80091EF93 /* BatteryHubWatch.app */,
+				25506D1E2FCD7DD80091EF93 /* BatteryHubWatch Watch App.app */,
+				25B8936D2FCD8FB7002BCF21 /* Widget.BatteryHubExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		25B8936E2FCD8FB7002BCF21 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25B8936F2FCD8FB7002BCF21 /* WidgetKit.framework */,
+				25B893712FCD8FB7002BCF21 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -55,10 +163,12 @@
 				253BC22E2FCC9F14002A69C3 /* Sources */,
 				253BC22F2FCC9F14002A69C3 /* Frameworks */,
 				253BC2302FCC9F14002A69C3 /* Resources */,
+				25B893802FCD8FB9002BCF21 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				25B8937E2FCD8FB9002BCF21 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				253BC2342FCC9F14002A69C3 /* BatteryHub */,
@@ -69,6 +179,69 @@
 			productName = BatteryHub;
 			productReference = 253BC2322FCC9F14002A69C3 /* BatteryHub.app */;
 			productType = "com.apple.product-type.application";
+		};
+		25506D182FCD7DD80091EF93 /* BatteryHubWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25506D2D2FCD7DDA0091EF93 /* Build configuration list for PBXNativeTarget "BatteryHubWatch" */;
+			buildPhases = (
+				25506D172FCD7DD80091EF93 /* Resources */,
+				25506D2C2FCD7DDA0091EF93 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				25506D212FCD7DD80091EF93 /* PBXTargetDependency */,
+			);
+			name = BatteryHubWatch;
+			packageProductDependencies = (
+			);
+			productName = BatteryHubWatch;
+			productReference = 25506D192FCD7DD80091EF93 /* BatteryHubWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		25506D1D2FCD7DD80091EF93 /* BatteryHubWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25506D292FCD7DDA0091EF93 /* Build configuration list for PBXNativeTarget "BatteryHubWatch Watch App" */;
+			buildPhases = (
+				25506D1A2FCD7DD80091EF93 /* Sources */,
+				25506D1B2FCD7DD80091EF93 /* Frameworks */,
+				25506D1C2FCD7DD80091EF93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				25506D222FCD7DD80091EF93 /* BatteryHubWatch Watch App */,
+			);
+			name = "BatteryHubWatch Watch App";
+			packageProductDependencies = (
+			);
+			productName = "BatteryHubWatch Watch App";
+			productReference = 25506D1E2FCD7DD80091EF93 /* BatteryHubWatch Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		25B8936C2FCD8FB7002BCF21 /* Widget.BatteryHubExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25B893842FCD8FB9002BCF21 /* Build configuration list for PBXNativeTarget "Widget.BatteryHubExtension" */;
+			buildPhases = (
+				25B893692FCD8FB7002BCF21 /* Sources */,
+				25B8936A2FCD8FB7002BCF21 /* Frameworks */,
+				25B8936B2FCD8FB7002BCF21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				25B893732FCD8FB7002BCF21 /* Widget.BatteryHub */,
+			);
+			name = Widget.BatteryHubExtension;
+			packageProductDependencies = (
+			);
+			productName = Widget.BatteryHubExtension;
+			productReference = 25B8936D2FCD8FB7002BCF21 /* Widget.BatteryHubExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -81,6 +254,15 @@
 				LastUpgradeCheck = 2650;
 				TargetAttributes = {
 					253BC2312FCC9F14002A69C3 = {
+						CreatedOnToolsVersion = 26.5;
+					};
+					25506D182FCD7DD80091EF93 = {
+						CreatedOnToolsVersion = 26.5;
+					};
+					25506D1D2FCD7DD80091EF93 = {
+						CreatedOnToolsVersion = 26.5;
+					};
+					25B8936C2FCD8FB7002BCF21 = {
 						CreatedOnToolsVersion = 26.5;
 					};
 				};
@@ -100,12 +282,36 @@
 			projectRoot = "";
 			targets = (
 				253BC2312FCC9F14002A69C3 /* BatteryHub */,
+				25506D182FCD7DD80091EF93 /* BatteryHubWatch */,
+				25506D1D2FCD7DD80091EF93 /* BatteryHubWatch Watch App */,
+				25B8936C2FCD8FB7002BCF21 /* Widget.BatteryHubExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		253BC2302FCC9F14002A69C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25506D172FCD7DD80091EF93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25506D1C2FCD7DD80091EF93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25B8936B2FCD8FB7002BCF21 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +328,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		25506D1A2FCD7DD80091EF93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25B893692FCD8FB7002BCF21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		25506D212FCD7DD80091EF93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25506D1D2FCD7DD80091EF93 /* BatteryHubWatch Watch App */;
+			targetProxy = 25506D202FCD7DD80091EF93 /* PBXContainerItemProxy */;
+		};
+		25B8937E2FCD8FB9002BCF21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25B8936C2FCD8FB7002BCF21 /* Widget.BatteryHubExtension */;
+			targetProxy = 25B8937D2FCD8FB9002BCF21 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		253BC23B2FCC9F16002A69C3 /* Debug */ = {
@@ -246,14 +479,42 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7NVX45XSLP;
 				ENABLE_APP_SANDBOX = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
 				ENABLE_USER_SELECTED_FILES = readonly;
+				EXCLUDED_SOURCE_FILE_NAMES = BatteryWidget.swift;
+				"EXCLUDED_SOURCE_FILE_NAMES[sdk=iphone*]" = (
+					MacBatteryReader.swift,
+					MenuBarController.swift,
+				);
+				"EXCLUDED_SOURCE_FILE_NAMES[sdk=iphonesimulator*]" = (
+					MacBatteryReader.swift,
+					MenuBarController.swift,
+				);
+				"EXCLUDED_SOURCE_FILE_NAMES[sdk=xr*]" = (
+					MacBatteryReader.swift,
+					MenuBarController.swift,
+				);
 				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_BGTaskSchedulerPermittedIdentifiers[sdk=iphoneos*]" = Elevant.BatteryHub.refresh;
+				"INFOPLIST_KEY_BGTaskSchedulerPermittedIdentifiers[sdk=iphonesimulator*]" = Elevant.BatteryHub.refresh;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIBackgroundModes[sdk=iphoneos*]" = "fetch processing";
+				"INFOPLIST_KEY_UIBackgroundModes[sdk=iphonesimulator*]" = "fetch processing";
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
@@ -288,14 +549,42 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7NVX45XSLP;
 				ENABLE_APP_SANDBOX = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
 				ENABLE_USER_SELECTED_FILES = readonly;
+				EXCLUDED_SOURCE_FILE_NAMES = BatteryWidget.swift;
+				"EXCLUDED_SOURCE_FILE_NAMES[sdk=iphone*]" = (
+					MacBatteryReader.swift,
+					MenuBarController.swift,
+				);
+				"EXCLUDED_SOURCE_FILE_NAMES[sdk=iphonesimulator*]" = (
+					MacBatteryReader.swift,
+					MenuBarController.swift,
+				);
+				"EXCLUDED_SOURCE_FILE_NAMES[sdk=xr*]" = (
+					MacBatteryReader.swift,
+					MenuBarController.swift,
+				);
 				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_BGTaskSchedulerPermittedIdentifiers[sdk=iphoneos*]" = Elevant.BatteryHub.refresh;
+				"INFOPLIST_KEY_BGTaskSchedulerPermittedIdentifiers[sdk=iphonesimulator*]" = Elevant.BatteryHub.refresh;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIBackgroundModes[sdk=iphoneos*]" = "fetch processing";
+				"INFOPLIST_KEY_UIBackgroundModes[sdk=iphonesimulator*]" = "fetch processing";
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
@@ -323,6 +612,192 @@
 			};
 			name = Release;
 		};
+		25506D2A2FCD7DDA0091EF93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7NVX45XSLP;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = BatteryHubWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Elevant.BatteryHubWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.5;
+			};
+			name = Debug;
+		};
+		25506D2B2FCD7DDA0091EF93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7NVX45XSLP;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = BatteryHubWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Elevant.BatteryHubWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 26.5;
+			};
+			name = Release;
+		};
+		25506D2E2FCD7DDA0091EF93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7NVX45XSLP;
+				INFOPLIST_KEY_CFBundleDisplayName = BatteryHubWatch;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Elevant.BatteryHubWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		25506D2F2FCD7DDA0091EF93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7NVX45XSLP;
+				INFOPLIST_KEY_CFBundleDisplayName = BatteryHubWatch;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Elevant.BatteryHubWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		25B893812FCD8FB9002BCF21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7NVX45XSLP;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Widget.BatteryHub/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Widget.BatteryHub;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Elevant.BatteryHub.Widget-BatteryHub";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 26.5;
+			};
+			name = Debug;
+		};
+		25B893822FCD8FB9002BCF21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7NVX45XSLP;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Widget.BatteryHub/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Widget.BatteryHub;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Elevant.BatteryHub.Widget-BatteryHub";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 26.5;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -340,6 +815,33 @@
 			buildConfigurations = (
 				253BC23E2FCC9F16002A69C3 /* Debug */,
 				253BC23F2FCC9F16002A69C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25506D292FCD7DDA0091EF93 /* Build configuration list for PBXNativeTarget "BatteryHubWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25506D2A2FCD7DDA0091EF93 /* Debug */,
+				25506D2B2FCD7DDA0091EF93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25506D2D2FCD7DDA0091EF93 /* Build configuration list for PBXNativeTarget "BatteryHubWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25506D2E2FCD7DDA0091EF93 /* Debug */,
+				25506D2F2FCD7DDA0091EF93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25B893842FCD8FB9002BCF21 /* Build configuration list for PBXNativeTarget "Widget.BatteryHubExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25B893812FCD8FB9002BCF21 /* Debug */,
+				25B893822FCD8FB9002BCF21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
